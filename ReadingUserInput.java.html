@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>ReadingUserInput.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ReadingUserInput.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.company</span><span class="s0">;</span>
+
+<span class="s0">import </span><span class="s1">java.util.Scanner</span><span class="s0">;</span>
+
+<span class="s0">public class </span><span class="s1">ReadingUserInput {</span>
+    <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+        <span class="s1">Scanner userInput = </span><span class="s0">new </span><span class="s1">Scanner(System.in)</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;welcome, please input your date of birth&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+        <span class="s0">short </span><span class="s1">dob = userInput.nextShort()</span><span class="s0">;</span>
+        <span class="s0">short </span><span class="s1">presentYear = </span><span class="s3">2021</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">customersAge = presentYear - dob</span><span class="s0">;</span>
+
+        <span class="s1">System.out.println(</span><span class="s2">&quot;You are &quot;</span><span class="s1">+ customersAge+ </span><span class="s2">&quot; years old&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+
+
+        <span class="s0">if</span><span class="s1">(customersAge &lt;</span><span class="s3">18</span><span class="s1">) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Too young to bet. Bye&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">} </span><span class="s0">else if</span><span class="s1">(customersAge &gt;=</span><span class="s3">18</span><span class="s1">) {</span>
+            <span class="s1">System.out.println(</span><span class="s2">&quot;Welcome, you are eligible to bet.&quot;</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+
+
+
+
+
+    <span class="s1">}</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>
